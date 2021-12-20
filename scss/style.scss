@@ -72,6 +72,7 @@ h5{
    margin: 0 auto;
 }
 
+
 /*Header*/
 .header{
    &__section{
@@ -86,6 +87,10 @@ h5{
          font-weight: 500;
          color: $color-text-gray-green;
          transition: 0.3s;
+         
+         &:hover{
+            color: $color-text-navy-blue;
+         }   
       }
 
       img{
@@ -95,16 +100,13 @@ h5{
 
    &__btn{
       @include btn_style-request;
+
+      &:hover{
+         border: 2px solid $color-violet;
+      }
    }
 }
 
-.anchor-header_style:hover{
-   color: $color-text-navy-blue;
-}
-
-.header__btn:hover{
-   border: 2px solid $color-violet;
-}
 
 
 /*Subheader*/
@@ -136,14 +138,15 @@ h5{
          margin-top: 52px;
          @include btn_anchor-style;
          transition: 0.3s;
+
+         &:hover{
+            background-color: $color-pink;
+            box-shadow: 0px 0px 15px $color-pink;
+         }
       } 
    }
 }
 
-.btn_anchor-style:hover{
-   background-color: $color-pink;
-   box-shadow: 0px 0px 15px $color-pink;
-}
 
 /*First-section-pink*/
 .first-section{
@@ -230,6 +233,10 @@ h5{
    
    .card_btn{
       @include card_btn-style;
+
+      &:hover{
+         color: $color-violet;
+      }
    }
 
    .card_green-bg {
@@ -301,6 +308,10 @@ h5{
       font-weight: 500;
       line-height: 22.4px;
       color: $color-violet;
+
+      &:hover{
+         color: $color-pink;
+      }
    }
 
    p{
@@ -308,10 +319,6 @@ h5{
       line-height: 32px;
       font-weight: 400;
    }
-}
-
-.anchor-coments-style:hover{
-   color: $color-pink;
 }
 
 /*Footer*/
@@ -345,20 +352,20 @@ h5{
    margin-bottom: 17px;
    padding: 15px 41px;
    transition: 0.3s;
+
+   &:hover{
+      background-color: $color-violet;
+      box-shadow: 0px 0px 15px $color-violet;
+   }
 }
 
 .btn_request{
    @include btn_style-request;
    font-weight: 900;
-}
 
-.btn_anchor:hover{
-   background-color: $color-violet;
-   box-shadow: 0px 0px 15px $color-violet;
-}
-
-.btn_request:hover{
-   border: 2px solid $color-violet;
+   &:hover{
+      border: 2px solid $color-violet;
+   }
 }
 
 .footer__section-two{
@@ -411,14 +418,13 @@ h5{
       text-align: center;
       line-height: 50px;
       transition: 0.3s;
-   }
-}
 
-.social__item:hover{
-   background-color: $color-pink;
-   box-shadow: 0px 0px 15px $color-pink;
-   color: white;
-   
+      &:hover{
+         background-color: $color-pink;
+         box-shadow: 0px 0px 15px $color-pink;
+         color: white;
+      }
+   }
 }
 
 .footer__section-three{
@@ -435,15 +441,14 @@ justify-content: space-between;
          color: $color-text-navy-blue;
          font-weight: 500;
          line-height: 28.8px;
+
+         &:hover{
+            color: $color-text-gray-green;
+         }
       }
    }
 
    margin-bottom: 93px;
-}
-
-
-li:hover > a{
-   color: $color-text-gray-green;
 }
 
 .footer__section-four{
@@ -454,5 +459,85 @@ li:hover > a{
       line-height: 21.6px;
       font-weight: 500;
       color: $color-text-navy-blue;
+   }
+}
+
+@media(max-width: 1024px){
+   .header{
+      &__section{
+      padding-bottom: 120px;
+      }
+
+      &__btn{
+         display: none;
+      }
+      
+   }
+   .first-section{
+      margin: 120px 0;
+      padding-right: 0;
+      min-height: 303px;
+
+      img{
+         display: none;
+      }
+
+      &__text{
+         max-width: 900px;
+         padding: 0 20px;
+
+         h2{
+            text-align: center;
+            padding-bottom: 20px;
+         }
+      }
+   }
+   .second-section{
+      &__header{
+         padding-bottom: 60px;
+         h2{
+            padding-bottom: 30px;
+         }
+      }
+      &__card{
+         padding-bottom: 104px;
+      }
+   }
+   .third-section{
+      padding: 61px 60px 35px 60px;
+      margin-bottom: 130px;
+   }
+}
+
+@media(max-width: 850px){
+   h1{
+      font-size: 70px;
+      text-align: center;
+   }
+
+   .header__nav .anchor-header_style{
+      font-size: 19px;
+   }
+
+   .third-section{
+      padding:26px 60px 22px 60px;
+      min-height: 0;
+      .comments_text{
+         padding: 0 20px;
+      }
+   }
+
+   .footer__section-one{
+      display: block;
+      padding: 100px 0;
+   }
+
+   
+}
+
+@media(max-width: 720px){
+
+   .subheader{
+      background-image: none;
    }
 }
