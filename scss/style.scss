@@ -74,29 +74,26 @@ h5{
 
 
 /*Header*/
-.header{
-
-   &__section{
-      padding: 50px 0 135px 0;
-   }
+.block-header{
+   padding: 50px 0 135px 0;
    
    &__nav{
-      .anchor-header_style{
+      img{
+         padding-right: 100px;
+      }
+
+      &__anchor{
          padding: 0 20px;
          font-size: 16px;
          line-height: 25px;
          font-weight: 500;
          color: $color-text-gray-green;
          transition: 0.3s;
-         
+
          &:hover{
             color: $color-text-navy-blue;
-         }   
-      }
-
-      img{
-         padding-right: 100px;
-      }
+         }
+      }   
    }
 
    &__btn{
@@ -106,14 +103,12 @@ h5{
          border: 2px solid $color-violet;
       }
    }
-
-   position: static;
 }
 
 
 
 /*Subheader*/
-.subheader{
+.block-subheader{
    background-image: url(/img/first_picture.svg) ;
    background-repeat: no-repeat;
    background-position-x: 80%;
@@ -136,18 +131,17 @@ h5{
          line-height: 30px;
          color: $color-text-gray-green;
       }
-
-      button{
-         margin-top: 52px;
-         @include btn_anchor-style;
-         transition: 0.3s;
-
-         &:hover{
-            background-color: $color-pink;
-            box-shadow: 0px 0px 15px $color-pink;
-         }
-      } 
    }
+   &__btn-anchor{
+      margin-top: 52px;
+      @include btn_anchor-style;
+      transition: 0.3s;
+
+      &:hover{
+         background-color: $color-pink;
+         box-shadow: 0px 0px 15px $color-pink;
+      }
+   } 
 }
 
 
@@ -175,7 +169,7 @@ h5{
       max-width: 475px;
 
       h2{
-         padding-bottom: 47px;
+         padding-bottom: 37px;
       }
    
       p{
@@ -195,6 +189,7 @@ h5{
    
    h2{
       padding-bottom: 50px;
+      padding-top: 3px;
    }
 
    p{
@@ -242,27 +237,28 @@ h5{
       }
    }
 
-   .card_green-bg {
+   &_green-bg {
       background-image: url("/img/background_green.svg");
       background-repeat: no-repeat;
       background-position: right;
       height: 358px;
    }
-   .card_violet-bg {
+
+   &_violet-bg {
       background-image: url("/img/background_violet.svg");
       background-repeat: no-repeat;
       background-position: right;
       height: 358px;
    }
 
-   .card_pink-bg {
+   &_pink-bg {
       background-image: url("/img/background_pink.svg");
       background-repeat: no-repeat;
       background-position: right;
       height: 358px;
    }
 
-   .card_blue-bg {
+   &_blue-bg {
       background-image: url("/img/background_blue.svg");
       background-repeat: no-repeat;
       background-position: right;
@@ -278,7 +274,7 @@ h5{
    background-color: #9C69E2;
    border-radius: 50px;
    padding: 109px 93px 49px 93px;
-   margin-bottom: 150px;
+   margin-bottom: 145px;
 
    h2{
       color: #FFFFFF;
@@ -295,166 +291,174 @@ h5{
       height: 330px;
       border-radius: 20px;
       box-shadow: 0px 20px 0px rgba(156, 70, 226, 0.3);
-   }
-
-   img{
-      padding: 0 0 122px 54px;
-   }
-
-   .comments_text{
-      max-width: 433px;
-      padding-right: 60px;
-   }
-
-   .anchor-coments-style{
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 22.4px;
-      color: $color-violet;
-
-      &:hover{
-         color: $color-pink;
-      }
-   }
-
-   p{
-      font-size: 16px;
-      line-height: 32px;
-      font-weight: 400;
-   }
-}
-
-/*Footer*/
-
-.footer{
-   &__line{
-      border-top: 2px solid #9C69E2;
-   }
-
-   &__section-one{
-      padding: 100px 0 126px 0;
-   }
-
-   &__text{
-      p{
-         padding: 18px 0;
-         font-size: 16px;
-         color: $color-text-gray-green;
-         line-height: 28.8px;
-         font-weight: 500;
-      }
-   }
-}
-
-.btn_anchor{
-   @include btn_anchor-style;
-   background-color: $color-pink;
-   font-size: 16px;
-   font-weight: 700;
-   margin-right: 30px;
-   margin-bottom: 17px;
-   padding: 15px 41px;
-   transition: 0.3s;
-
-   &:hover{
-      background-color: $color-violet;
-      box-shadow: 0px 0px 15px $color-violet;
-   }
-}
-
-.btn_request{
-   @include btn_style-request;
-   font-weight: 900;
-
-   &:hover{
-      border: 2px solid $color-violet;
-   }
-}
-
-.footer__section-two{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   padding-bottom: 93px;
-
-   .logo_flex-row{
-      display: flex;
-      flex-direction: row;
-      padding-bottom: 23px;
    
+
       img{
-         padding-right: 20px;
-     }
-   }
+         padding: 0 0 122px 54px;
+      }   
 
-   .bold_font{
-      font-size: 15px;
-      line-height: 25.6px;
-      font-weight: 800px;
-      padding-bottom: 30px;
-      padding-top: 13px;
-      color: $color-text-navy-blue;
-   }
-   
-   li a{
-      font-size: 16px;
-      line-height: 40px;
-      color: $color-text-navy-blue;
-
-      &:hover{
-         color: $color-text-gray-green;
+      &_text{
+         max-width: 433px;
+         padding-right: 60px;
       }
-   }
 
-   .social{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      color: white;
-      font-size: 25px;
-      
-      &__item{
-         width: 50px;
-         height: 50px;
-         border-radius: 50%;
-            
-         background-color: $color-violet;
-         text-align: center;
-         line-height: 50px;
-         transition: 0.3s;
-         margin-right: 20px;
-      
+      p{
+         font-size: 16px;
+         line-height: 32px;
+         font-weight: 400;
+      }
+
+      .anchor-coments-style{
+         font-size: 14px;
+         font-weight: 500;
+         line-height: 22.4px;
+         color: $color-violet;
+   
          &:hover{
-            background-color: $color-pink;
-            box-shadow: 0px 0px 15px $color-pink;
-            color: white;
+            color: $color-pink;
          }
       }
    }
 }
 
-.footer__section-four{
-   min-height: 146px;
+/*Footer*/
 
-   p{
-      font-size: 12px;
-      line-height: 21.6px;
-      font-weight: 500;
-      color: $color-text-navy-blue;
+.block-footer{
+   &__line{
+      border-top: 2px solid #9C69E2;
+   }
+
+   &__row{
+      padding: 100px 0 126px 0;
+      
+      &__text{
+         p{
+            padding: 18px 0;
+            font-size: 16px;
+            color: $color-text-gray-green;
+            line-height: 28.8px;
+            font-weight: 500;
+         }
+      }
+
+      &__btn{
+         &-anchor{
+            @include btn_anchor-style;
+            background-color: $color-pink;
+            font-size: 16px;
+            font-weight: 700;
+            margin-right: 30px;
+            margin-bottom: 17px;
+            padding: 15px 41px;
+            transition: 0.3s;
+            &:hover{
+               background-color: $color-violet;
+               box-shadow: 0px 0px 15px $color-violet;
+            }
+         }
+
+         &-request{
+            @include btn_style-request;
+            font-weight: 900;
+         
+            &:hover{
+               border: 2px solid $color-violet;
+            }
+         }
+      }
+   }
+
+   &__columns{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 93px;
+   
+      .logo_flex-row{
+         display: flex;
+         flex-direction: row;
+         padding-bottom: 53px;
+      
+         img{
+            padding-right: 20px;
+            padding-top: 6px;
+        }
+      }
+   
+      &-about-help{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         width: 279px;
+      }
+
+      .bold-font{
+         font-size: 15px;
+         line-height: 25.6px;
+         font-weight: 800px;
+         padding-bottom: 30px;
+         padding-top: 16px;
+         color: $color-text-navy-blue;
+      }
+      
+      li a{
+         font-size: 16px;
+         line-height: 40px;
+         color: $color-text-navy-blue;
+   
+         &:hover{
+            color: $color-text-gray-green;
+         }
+      }
+   
+      .social{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         color: white;
+         font-size: 25px;
+         
+         &__item{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+               
+            background-color: $color-violet;
+            text-align: center;
+            line-height: 50px;
+            transition: 0.3s;
+            margin-right: 20px;
+            
+            &:hover{
+               background-color: $color-pink;
+               box-shadow: 0px 0px 15px $color-pink;
+               color: white;
+            }
+         }
+      }
+   }
+
+   &_text-end{
+      min-height: 146px;
+   
+      p{
+         font-size: 12px;
+         line-height: 21.6px;
+         font-weight: 500;
+         color: $color-text-navy-blue;
+      }
    }
 }
 
 @media(max-width: 1024px){
-   .header{
-      &__section{
+   .block-header{
       padding-bottom: 120px;
-      }
 
       &__btn{
          display: none;
-      }
-      
+      }   
    }
+
    .first-section{
       margin: 90px 0;
       padding-right: 0;
@@ -475,6 +479,7 @@ h5{
          }
       }
    }
+
    .second-section{
       &__header{
          padding-bottom: 60px;
@@ -482,31 +487,44 @@ h5{
             padding-bottom: 30px;
          }
       }
+
       &__card{
          padding-bottom: 104px;
       }
    }
+
    .third-section{
       padding: 61px 60px 35px 60px;
       margin-bottom: 130px;
    }
 
-   .footer__section-two{
+   .block-footer__columns{
       flex-direction: column;
       justify-content: center;
+      padding-bottom: 41px ;
+      gap: 30px;
 
-      .section-logo__flex-row{
+      &-logo{
          display: flex;
          flex-direction: row;
          justify-content: space-between;
          width: 100%;
       }
 
-      .bold_font{
-         padding-bottom: 5px;
-         padding-top: 20px;
+      &-about-help{
+         width: 100%;
+         margin: 0 auto;
+         justify-content: space-evenly;
+         
          
       }
+
+      &-social-media{
+         margin: 0 auto;
+         text-align: center;
+      }
+
+      
 
       li a{
          font-size: 16px;
@@ -527,7 +545,7 @@ h5{
       }
    }
 
-   .footer__section-four{
+   .block-footer_text-end{
       text-align: center;
       min-height: 100px;
    }
@@ -539,45 +557,46 @@ h5{
       text-align: center;
    }
 
-   .header__nav .anchor-header_style{
+   .block-header__nav a{
       font-size: 19px;
    }
 
    .third-section{
       padding:26px 60px 22px 60px;
       min-height: 0;
-      .comments_text{
+      
+      &__comments_text{
          padding: 0 20px;
       }
    }
 
-   .footer__section-one{
+   .block-footer__row{
       display: block;
       padding: 100px 0;
    }
 
-   .footer__section-two{
+   .block-footer__columns{
       padding-bottom: 70px;
    }
 }
 
 @media(max-width: 720px){
 
-   .subheader{
+   .block-subheader{
       background-image: none;
-   }
-
-   .subheader__text{
-      h1{
-         font-size: 60fr;
-         max-width: 700px;
+      
+      &__text{
+         h1{
+            font-size: 60fr;
+            max-width: 700px;
+         }
       }
    }
 }
 
 @media(max-width: 700px){
 
-   .subheader__text{
+   .block-subheader__text{
       h1{
          font-size: 60px;
          max-width: inherit;
@@ -587,7 +606,7 @@ h5{
       }
    }
    
-   .anchor-header_style{
+   .block-header__nav__anchor{
       display: none;
    }
 
@@ -595,24 +614,30 @@ h5{
       padding: 26px 40px 22px 40px;
    }
 
-   .footer__section-one{
+   .block-footer__row{
       padding: 50px 0;
    }
 
-   .footer__section-two{
-      .section-logo__flex-row{
+   .block-footer__columns{
+      &-logo{
          display: flex;
          flex-direction: column;
+         text-align: center;
+         
+         .logo_flex-row{
+            margin: 0 auto;
+         }
+         
       }
    }
 
-   .footer__section-four{
+   .block-footer_text-end{
       min-height: 80px;
    }
 }
 
 @media(max-width: 530px){
-   .subheader__text{
+   .block-subheader__text{
       h1{
          max-width: 432px;
       }
@@ -621,19 +646,24 @@ h5{
       }
    }
 
-   .second-section__header {
-      padding-bottom: 18px;
-  }
+   .second-section{
+      &__header {
+         padding-bottom: 18px;
+      }
 
-   .card_green-bg,
-   .card_violet-bg,
-   .card_pink-bg,
-   .card_blue-bg
-   {
-      img{
-         display: none;
+      &__card{
+         &_green-bg,
+         &_violet-bg,
+         &_pink-bg,
+         &_blue-bg{
+            img{
+               display: none;
+            }
+         }
+
       }
    }
+   
 
    h2{
       font-size: 30px;
@@ -641,7 +671,7 @@ h5{
    
    }
 
-   .third-section img {
+   .third-section__comments img {
       padding: 0 0 122px 14px;
   }
 }

@@ -18,38 +18,38 @@
 
 <body>
    <header class="container">
-      <div class="header__section flex-row">
-         <nav class="header__nav flex-row">
+      <div class="block-header  flex-row">
+         <nav class="block-header__nav flex-row">
             <img src="/img/logo.svg" alt="the logo">
-            <a class="anchor-header_style" href="#">About</a>
-            <a class="anchor-header_style" href="#">Help</a>
-            <a class="anchor-header_style" href="#">Features</a>
-            <a class="anchor-header_style" href="#">Signup</a>
+            <a class="block-header__nav__anchor" href="#">About</a>
+            <a class="block-header__nav__anchor" href="#">Help</a>
+            <a class="block-header__nav__anchor" href="#">Features</a>
+            <a class="block-header__nav__anchor" href="#">Signup</a>
          </nav>
-         <button class="header__btn btn_style-request" type="submit">
+         <button class="block-header__btn btn_style-request" type="submit">
             Request Demo
             <img src="/img/arrow.svg" alt="arrow">
          </button>
       </div>
    </header>
 
-   <div class="subheader">
+   <div class="block-subheader">
       <div class="container">
-         <div class="subheader__text">
+         <div class="block-subheader__text">
             <h1>Save your data storage here.</h1>
             <p>
                Data Warehouse is a data storage area that has been
                tested for security, so you can store your data here
                safely but not be afraid of being stolen by others.
             </p>
-            <button class="btn_anchor-style">Learn more</button>
+            <button class="block-subheader__btn-anchor">Learn more</button>
          </div>
       </div>
    </div>
 
 
 
-   <main class="main__container container">
+   <main class="section container">
       <div class="first-section">
          <div class="first-section__img">
             <img src="/img/second_picture.svg" alt="picture">
@@ -76,10 +76,10 @@
          </div>
 
          <div class="second-section__card">
-            <div class="card_green-bg flex-column">
+            <div class="second-section__card_green-bg flex-column">
                <img src="/img/picrure_background_green.svg" alt="picture">
                <div class="card-text ">
-                  <h3>Request Demo</h3>
+                  <h3>Search Data</h3>
                   <p>
                      Don&rsquo;t worry if your data is very large, the Data Warehoue provides a search engine, which is
                      useful for making it easier to find data effectively saving time.
@@ -88,7 +88,7 @@
                </div>
             </div>
 
-            <div class="card_violet-bg flex-column">
+            <div class="second-section__card_violet-bg flex-column">
                <img src="/img/picture_background_violet.svg" alt="picture">
                <div class="card-text">
                   <h3>24 Hours Access</h3>
@@ -101,7 +101,7 @@
                </div>
             </div>
 
-            <div class="card_pink-bg flex-column">
+            <div class="second-section__card_pink-bg flex-column">
                <img src="/img/picture_background_pink.svg" alt="picture">
                <div class="card-text">
                   <h3>Print Out</h3>
@@ -113,7 +113,7 @@
                </div>
             </div>
 
-            <div class="card_blue-bg flex-column">
+            <div class="second-section__card_blue-bg flex-column">
                <img src="/img/picture_background_blue.svg" alt="picture">
                <div class="card-text">
                   <h3>Security Code</h3>
@@ -131,7 +131,7 @@
             <h2>Testimonials</h2>
             <div class="third-section__comments">
                <img src="/img/photo_icon.svg" alt="visitor`s photo">
-               <div class="comments_text">
+               <div class="third-section__comments_text">
                   <h5>John Fang </h5>
                   <a class="anchor-coments-style" href="http://wordfaang.com" target="_blank">wordfaang.com</a>
                   <p>
@@ -146,24 +146,24 @@
       </div>
    </main>
 
-   <footer class="footer__line">
+   <footer class="block-footer__line">
       <div class="container">
-         <div class="footer__section-one flex-row">
-            <div class="footer__text">
+         <div class="block-footer__row flex-row">
+            <div class="block-footer__row__text">
                <h2>Try for free!</h2>
                <p>Get limited 1 week free try our features!</p>
             </div>
-            <div class="footer__btn">
-               <button class="btn_anchor">Learn more</button>
-               <button class="btn_request" type="submit">
+            <div class="block-footer__row__btn">
+               <button class="block-footer__row__btn-anchor">Learn more</button>
+               <button class="block-footer__row__btn-request" type="submit">
                   Request Demo
                   <img src="/img/arrow.svg" alt="arrow">
                </button>
             </div>
          </div>
 
-         <div class="footer__section-two">
-            <div class="section-logo__flex-row">
+         <div class="block-footer__columns">
+            <div class="block-footer__columns-logo">
                <ul class="logo_flex-row">
                   <li><img src="/img/logo.svg" alt="the logo"></li>
                   <li>
@@ -180,42 +180,35 @@
                      <a href="mailto:info@warehouse.project" target="_blank">info@warehouse.project</a>
                   </li>
                   <li>
-                     <a href="tel:+ 1-232-3434 " target="_blank">1-232-3434 (Main)</a>
+                     <a href="tel:+1-232-3434 " target="_blank">1-232-3434 (Main)</a>
                   </li>
                </ul>
             </div>
 
+            <div class="block-footer__columns-about-help">
+               <div>
+                  <h6 class="bold-font">About</h6>
+                  <ul>
+                     <li><a href="#">Profile</a></li>
+                     <li><a href="#"> Features</a></li>
+                     <li><a href="#"> Careers</a></li>
+                     <li><a href="#">DW News</a></li>
+                  </ul>
+               </div>
 
-            <div>
-               <ul class="about_width">
-                  <li>
-                     <h6 class="bold_font">About
-                        <h6>
-                  </li>
-                  <li><a href="#">Profile</a></li>
-                  <li><a href="#"> Features</a></li>
-                  <li><a href="#"> Careers</a></li>
-                  <li><a href="#">DW News</a></li>
-               </ul>
+               <div>
+                  <h6 class="bold-font"> Help</h6>
+                  <ul>
+                     <li><a href=" #">Support</a></li>
+                     <li><a href="#"> Sign up</a></li>
+                     <li><a href="#"> Guide</a></li>
+                     <li><a href="#">Reports</a></li>
+                     <li><a href="#">Q&A</a></li>
+                  </ul>
+               </div>
             </div>
-
-            <div>
-               <ul>
-                  <h6 class="bold_font"> Help</h6>
-               </ul>
-               <ul class="help_width ">
-                  <li><a href=" #">Support</a></li>
-                  <li><a href="#"> Sign up</a></li>
-                  <li><a href="#"> Guide</a></li>
-                  <li><a href="#">Reports</a></li>
-                  <li><a href="#">Q&A</a></li>
-               </ul>
-            </div>
-
-            <div>
-               <ul>
-                  <h6 class="bold_font">Social Media</h6>
-               </ul>
+            <div class="block-footer__columns-social-media">
+               <h6 class="bold-font">Social Media</h6>
                <ul class="social">
                   <li class="social__item">
                      <i class="fab fa-facebook-f"></i>
@@ -230,7 +223,7 @@
             </div>
          </div>
 
-         <div class="footer__section-four">
+         <div class="block-footer_text-end">
             <p>© Datawarehouse™, 2020. All rights reserved.</p>
             <p>Company Registration Number: 21479524.</p>
          </div>
